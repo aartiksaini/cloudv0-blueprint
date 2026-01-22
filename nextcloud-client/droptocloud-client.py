@@ -14,6 +14,7 @@ class subinfo(info.infoclass):
             self.options.dynamic.registerOption("forceOverrideServerUrl", False)
 
     def setTargets(self):
+        self.name = "droptocloud-client"
         # Use your modified GitHub repo
         self.svnTargets["master"] = "[git]https://github.com/cloudv01/desktop_client"
 
