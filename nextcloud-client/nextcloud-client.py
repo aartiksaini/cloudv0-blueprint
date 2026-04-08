@@ -15,11 +15,11 @@ class subinfo(info.infoclass):
             self.options.dynamic.registerOption("forceOverrideServerUrl", False)
 
     def setTargets(self):
-        self.svnTargets["master"] = "[git]https://github.com/nextcloud/desktop"
+        self.svnTargets["master"] = "[git]https://github.com/cloudv01/desktop_client"
 
-        self.description = "Nextcloud Desktop Client"
-        self.displayName = "Nextcloud"
-        self.webpage = "https://nextcloud.com"
+        self.description = "Store2Cloud Desktop Client"
+        self.displayName = "Store2Cloud"
+        self.webpage = "https://store2cloud.com"
 
         self.defaultTarget = "master"
 
@@ -84,8 +84,8 @@ class Package(CMakePackageBase):
 
     def createPackage(self):
         self.blacklist_file.append(os.path.join(self.packageDir(), 'blacklist.txt'))
-        self.defines["appname"] = "nextcloud"
-        self.defines["company"] = "Nextcloud GmbH"
+        self.defines["appname"] = "store2cloud"
+        self.defines["company"] = "Store2Cloud"
         self.applicationExecutable = "nextcloud"
 
         self.ignoredPackages += ["binary/mysql"]

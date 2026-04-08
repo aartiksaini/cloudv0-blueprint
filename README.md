@@ -1,6 +1,6 @@
-# 🖥️ Nextcloud Desktop Client blueprints
+# 🖥️ Store2Cloud Desktop Client blueprints
 
-:blue_book: We decided to use [KDE Craft](https://community.kde.org/Craft) to get all binary dependencies of the [Nextcloud files desktop client](https://github.com/nextcloud/desktop).
+:blue_book: We decided to use [KDE Craft](https://community.kde.org/Craft) to get all binary dependencies of the [Store2Cloud files desktop client](https://github.com/cloudv01/desktop_client).
 
 ## System requirements
 
@@ -11,7 +11,7 @@
 - KDE Craft
 - Microsoft Visual Studio 2022
 - Inkscape
-- A Nextcloud server
+- A Store2Cloud server
 
 > [!TIP]
 > We highly recommend [Nextcloud development environment on Docker Compose](https://juliushaertl.github.io/nextcloud-docker-dev/) for testing/bug fixing/development.<br>
@@ -58,7 +58,7 @@ C:\CraftRoot\craft\craftenv.ps1
 ```
 4. Add the blueprints from this repository:
 ```
-craft --add-blueprint-repository https://github.com/nextcloud/desktop-client-blueprints.git
+craft --add-blueprint-repository https://github.com/cloudv01/desktop-client-blueprints.git
 ```
 5.
 ```
@@ -95,7 +95,7 @@ craft --install-deps nextcloud-client
 > This will result in using the `cmake` version downloaded with `KDE Craft`.
 5. Clone the desktop client repository.
 ```
-git clone https://github.com/nextcloud/desktop.git
+git clone https://github.com/cloudv01/desktop_client.git
 ```
 6. Create the build folder `<build-folder>`.
 ```
@@ -115,5 +115,5 @@ cmake --build .
 ```
 
 > [!NOTE]
-> ❓ If you have questions about it, you may use the forums at https://help.nextcloud.com to ask them.<br>
-> 🐛 If you find bugs with these steps, you may open a GH issue at https://github.com/nextcloud/desktop/issues.
+> ❓ If you have questions about it, you may use the forums at https://help.store2cloud.com to ask them.<br>
+> 🐛 If you find bugs with these steps, you may open a GH issue at https://github.com/cloudv01/desktop_client/issues.
