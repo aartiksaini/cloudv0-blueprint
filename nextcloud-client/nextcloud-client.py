@@ -19,7 +19,7 @@ class subinfo(info.infoclass):
 
         self.description = "Store2Cloud Desktop Client"
         self.displayName = "Store2Cloud"
-        self.webpage = "https://store2cloud.com"
+        self.webpage = "https://cloud.store2cloud.com"
 
         self.defaultTarget = "master"
 
