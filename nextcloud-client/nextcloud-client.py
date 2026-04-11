@@ -42,7 +42,6 @@ class subinfo(info.infoclass):
         self.runtimeDependencies["qt-libs/qtkeychain"] = None
         self.runtimeDependencies["kde/frameworks/tier1/karchive"] = None
         self.runtimeDependencies["libs/openssl"] = None
-        self.runtimeDependencies["kde/libs/kdsingleapplication-qt6"] = None
 
 class Package(CMakePackageBase):
     def __init__(self, **kwargs):
